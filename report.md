@@ -1,4 +1,4 @@
-# LAB 9
+![image](https://github.com/user-attachments/assets/326dc69b-44dd-4e28-900f-0337374eac1b)# LAB 9
 
 1. Đăng nhập vào tài khoảng Github
 
@@ -119,16 +119,18 @@ if \_\_name\_\_ == "\_\_main\_\_":
 Sau khi save `main.py`, chạy lệnh `docker-compose up run` (mất khoảng 5 phút)
 ![image](https://github.com/user-attachments/assets/1937ba2e-ce1e-4977-a496-4767dd5d4ee6)
 
-EXERCISE 2
+## EXERCISE 2
 
 Thay đổi thư mục tại CMD thành Exercise-2
 
 Chạy lệnh docker build --tag=exercise-2 . để build image Docker (Quá trình diễn ra trong 2 – 3 phút)
+![image](https://github.com/user-attachments/assets/4d41530c-32d7-443c-89e9-27f76d7bb0b7)
 
 Sau khi build xong, truy cập file main.py bằng VS code
+![image](https://github.com/user-attachments/assets/bba9a20c-875a-4f40-be67-c7d07b692808)
 
 Nội dung file main.py
-
+```
 import requests
 
 from bs4 import BeautifulSoup
@@ -232,32 +234,35 @@ def main():
 if \_\_name\_\_ == "\_\_main\_\_":
 
     main()
-
-Sau khi save file main.py, chạy dòng lệnh docker-compose up run
+```
+Sau khi save file main.py, chạy dòng lệnh `docker-compose up run`
 
 Kết quả thu được
+![image](https://github.com/user-attachments/assets/4c307ffa-cb55-4e1d-8213-3fa84081d436)
 
-
-EXERCISE 3
+## EXERCISE 3
 
 Thay đổi thư mục tại CMD thành Exercise-3
 
-Chạy lệnh docker build --tag=exercise-3 . để build image Docker (Quá trình diễn ra trong 2 – 3 phút)
+Chạy lệnh docker `build --tag=exercise-3` . để build image Docker (Quá trình diễn ra trong 2 – 3 phút)
+![image](https://github.com/user-attachments/assets/a7c2b7d6-8b55-44c1-b6da-6766c52e733a)
 
 Sau khi build xong, truy cập file main.py bằng VS code
+![image](https://github.com/user-attachments/assets/87407b0d-e131-46fd-a7ab-667784083fb7)
 
 Lỗi module cgi, một thư viện chuẩn của Python dùng để xử lý các script CGI, bị thiếu. Module này là yêu cầu của thư viện botocore, một phụ thuộc của boto3 để làm việc với các dịch vụ AWS. Vì Docker image python:latest đang sử dụng không bao gồm module cgi, do phiên bản Python mới (như Python:latest trong container Docker) có thể không đi kèm với module này.
 
  Thay đổi docker file thành FROM Python:3.9
 
-EXERCISE-4
+## EXERCISE-4
 
 Thay đổi thư mục tại CMD thành Exercise-4
 
-Chạy lệnh docker build --tag=exercise-4 . để build image Docker (Quá trình diễn ra trong 2 – 3 phút)
+Chạy lệnh docker `build --tag=exercise-4` . để build image Docker (Quá trình diễn ra trong 2 – 3 phút)
+![image](https://github.com/user-attachments/assets/db2a2e7d-5dd1-4b13-92f3-b8d3adb230a3)
 
 Nội dung file main.py
-
+```
 import os
 
 import json
@@ -355,17 +360,20 @@ def main():
 if \_\_name\_\_ == "\_\_main\_\_":
 
     main()
-
+```
 Sau khi save file main.py, thực thi lệnh docker-compose up run
+![image](https://github.com/user-attachments/assets/1c0edd93-1466-414e-873a-e0c941012bfc)
+![image](https://github.com/user-attachments/assets/5736c50e-4bd9-46cf-b7e7-9577c53624f5)
 
 EXERCISE-5
 
-Thay đổi thư mục tại CMD thành Exercise-4
+Thay đổi thư mục tại CMD thành `Exercise-4`
 
-Chạy lệnh docker build --tag=exercise-4 . để build image Docker (Quá trình diễn ra trong 2 – 3 phút)
+Chạy lệnh `docker build --tag=exercise-4` . để build image Docker (Quá trình diễn ra trong 2 – 3 phút)
+![image](https://github.com/user-attachments/assets/09c296d4-c341-43eb-bb3c-5482fd3b23b8)
 
 Nội dung file main.py:
-
+```
 import psycopg2
 
 import csv
@@ -565,6 +573,10 @@ with conn.cursor() as cur:
 conn.close()
 
 print("Data has been loaded successfully.")
+```
+Sau khi thực thi lệnh `docker-compose up run`
+![image](https://github.com/user-attachments/assets/8493baa6-288d-44fe-b5d5-3a81788ab7ea)
+![image](https://github.com/user-attachments/assets/6b683fb4-5738-49ff-b600-79cf8b8762b2)
 
-Sau khi thực thi lệnh docker-compose up run
+
 
